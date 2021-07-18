@@ -66,7 +66,10 @@ section{
 .MainDiv h1,h2,h3 {
   font-weight: 600;
   font-size: larger;
-  font: 60px;
+}
+
+.MainDiv h1{
+  font-size: 60px;
 }
 
 /* .SecondarySection{
@@ -95,6 +98,10 @@ section{
   margin: 10vh auto 0 auto;
   justify-content: center;
   align-content: center;
+}
+
+.benefits h1{
+  font-size: 36px;
 }
 
 .cardGrid{
