@@ -1,7 +1,10 @@
 import React from 'react';
 
-export default function MainFooter(){
+export default function MainFooter(props){
     return(
-        <h1>Home</h1>
+        <footer>
+            <hr/>
+            {props.children}
+        </footer>
     )
 }
