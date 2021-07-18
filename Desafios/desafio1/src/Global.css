@@ -6,18 +6,27 @@
 }
 
 html, body {
+  width: 100%;
+  height: 100vh;
   justify-content: center;
   align-items: center;
   background-color: black;
   color: whitesmoke;
   font-weight: 400;
   font-family: 'Courier New', Courier, monospace;
+  align-content: center;
 }
 
 img{
   width: 100%;
   height: 100%;
 }
+
+/* @media only screen and (min-width: 1000px){
+
+
+} */
+
 
 /* Aqui começa a parte dos SectionDivisions */
 section{
@@ -31,16 +40,16 @@ section{
 .MainSection{
   background-image: url('./assets/images/imagem1.jpg');
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-content: center;
 }
 
 .MainSection .MainDiv{
   display: flex;
   color: black;
-  margin-left: 11vw;
-  height: 400px;
-  width: 550px;
+  /* margin-left: 11vw; */
+  height: 60%;
+  width: 70%;
   background-color: rgba(255,255,255,0.9);
   border-radius: 24px;
   justify-content: center;
@@ -52,12 +61,17 @@ section{
   text-align: center;
   justify-content: center;
   align-content: center;
-
 }
 
-.SecondarySection{
+.MainDiv h1,h2,h3 {
+  font-weight: 600;
+  font-size: larger;
+  font: 60px;
+}
+
+/* .SecondarySection{
   background-image: url('./assets/images/imagem2.jpg');
-}
+} */
 
 .ThirdSection{
   height:95vh;
@@ -73,33 +87,45 @@ section{
 /* Aqui termina a parte dos SectionDivisions */
 
 /* Aqui começa a parte dos Card Grids */
+
+.benefits{
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  margin: 10vh auto 0 auto;
+  justify-content: center;
+  align-content: center;
+}
+
 .cardGrid{
   margin: 0 auto;
   display: grid;
-  /* width: 80%; */
-  height: 100%;
+  width: 95%;
+  height: 80%;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 9px;
   justify-content: center;
   align-items: center;
   align-content: center;
 }
 
 .cardGrid div{
-  padding-top: 20px;
+  padding-top: 2vh;
   margin: 0 auto;
-  width: 80%;
-  height: 100%;
-  min-height: 360px ;
+  width: 100%;
   justify-content: center;
   align-self: center;
   align-items: center;
   text-align: center;
   background-color: rgba(255,255,255,0.9);
   border-radius: 24px;
-  color: black
+  color: black;
+  padding-bottom: 15px;
 }
 
 .cardGrid div img{
+  width: auto;
+  height: auto;
   border-radius: 24px;
   max-width: 300px;
   max-height: 258px;
@@ -113,6 +139,8 @@ section{
   align-items: center;
   align-content: center;
 }
+
+/* Começo das configurações do Form */
 
 .loadingPlace{
   display: flex;
@@ -167,21 +195,20 @@ button{
   transition: 0.3s ease-in-out;
 }
 
-/* button:hover {
-  transform: scale(1.03);
-  opacity: 0.9;
-} */
-
 button:active{
   transform: scale(0.98);
   opacity: 1.2;
 }
+/* Final das configurações do Form */
 
 /* Final dos CardGrids */
 
 footer{
-  height:5vh;
+  display: flex;
+  height: 5vh;
+  width: 100%;
   justify-content: center;
+  align-content: center;
   align-items: center;
   text-align: center;
 }

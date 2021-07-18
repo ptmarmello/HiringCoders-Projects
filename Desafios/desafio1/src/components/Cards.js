@@ -38,11 +38,11 @@ function MainCard(){
         <CardTemplate>
             <div id="loadingPlace" className="loadingPlace">
                 <form id="form" onSubmit={HandleSubmit}>
-                    <h2>Receba Ofertas Exclusivas!!</h2>
+                    <h2>Receba Ofertas Exclusivas em Primeira Mão!!</h2>
                     <input type="text" id="name" placeholder="Insira seu Nome" />
                     <input type="email" id="email" placeholder="Insira seu Email" />
                     <button type="submit">
-                        Receber novidades
+                        <h3>Receber novidades</h3>
                     </button>
                 </form>
             </div>
@@ -53,24 +53,28 @@ function MainCard(){
 
 function CardGrid(props){
     return(
-        <div className="cardGrid">
-            {/* Colocar aqui uma grid para 3 "conteudos" */}
-            <div>
-                <img alt="Imagem1" src={props.div1} />
-                <h3>Praesent sed elementum leo</h3>
-                <p>Sed placerat quam.</p>
+        <>
+            <div className="benefits">
+                <h1>Aproveite Nossos Benefícios</h1>
             </div>
-            <div>
-                <img alt="imagem2" src={props.div2} />
-                <h3>Fusce laoreet leo ut</h3>
-                <p>orci volutpat, at vulputate nulla commodo.</p>
+            <div className="cardGrid">
+                <div>
+                    <img alt="Imagem1" src={props.div1} />
+                    <h3>Praesent sed elementum leo</h3>
+                    <p>Sed placerat quam.</p>
+                </div>
+                <div>
+                    <img alt="imagem2" src={props.div2} />
+                    <h3>Fusce laoreet leo ut</h3>
+                    <p>orci volutpat, at vulputate nulla</p>
+                </div>
+                <div>
+                    <img alt="imagem3" src={props.div3} />
+                    <h3>Curabitur bibendum fermentum</h3>
+                    <p>Proin id ultricies nunc.</p>
+                </div>
             </div>
-            <div>
-                <img alt="imagem3" src={props.div3} />
-                <h3>Curabitur bibendum fermentum</h3>
-                <p>Proin id ultricies nunc. Etiam id justo vitae dolor</p>
-            </div>
-        </div>
+        </>
     )
 }
 

@@ -15,12 +15,14 @@ export default function Home(){
                 <SectionDivision passClass={'MainSection'}>
                     <div className="MainDiv">
                         <div>
-                            <h1 style={{fontSize:'40px'}}>Aproveite nossas <span style={{color:'rgb(230, 139, 66)'}}>Super Ofertas</span> de <span style={{color:'rgb(230, 139, 66)'}}>Black Friday</span> </h1>
+                            <h2> Prepare-se! </h2>
+                            <h1>Nossas <span style={{color:'rgb(230, 139, 66)'}}>Super Ofertas</span> de <span style={{color:'rgb(230, 139, 66)'}}>Black Friday</span> </h1>
+                            <h3>Estão chegando...</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
                 </SectionDivision>
-                <SectionDivision passClass={'SecondarySection'} >
+                <SectionDivision passClass={'SecondarySection'}>
                     <CardGrid div1={image1} div2={image2} div3={image4} />
                     {/* aqui seria melhor se fosse typescript */}
                 </SectionDivision>
@@ -28,7 +30,9 @@ export default function Home(){
                     <MainCard />
                 </SectionDivision>
                 <MainFooter>
-                    <p>Todos os direitos Reservados - Pedro Thiago Marmello @HiringCoders</p>
+                    <div>
+                        <p>Todos os direitos Reservados - <a href="https://github.com/ptmarmello" style={{color:'rgb(230,139,66)'}} >Pedro Thiago Marmello</a> @HiringCoders</p>
+                    </div>
                 </MainFooter>
             </main>
         </>

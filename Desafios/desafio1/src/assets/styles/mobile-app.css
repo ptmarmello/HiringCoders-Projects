@@ -1,0 +1,106 @@
+@media only screen and (max-width: 900px) {
+    html, body{
+        width: 100vw;
+        justify-content: center;
+        text-align: center;
+        align-content: center;
+    }
+      
+    
+    /* Aqui começa a parte dos SectionDivisions */
+    
+    section{
+        width: 100vw;
+        height: 100%;
+        min-height: 100vh;
+        margin-bottom: 3vh;
+    }
+    
+    .MainSection .MainDiv{
+        display: flex;
+        height: 80%;
+        width: 70%;
+        min-height: 350px;
+        font-size: larger;
+        font: 400;
+      }
+
+      /* Aqui termina a parte dos SectionDivisions */
+      
+      /* Aqui começa a parte dos Card Grids */
+      
+      .benefits{
+        padding-top: 3vh;
+        padding-bottom: 2vh;
+        margin: 0 auto;
+        justify-content: center;
+        align-content: center;
+      }
+      
+      .cardGrid{
+        margin: 0 auto;
+        display: block;
+        width: 90%;
+        height: 90%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+      }
+      
+      .cardGrid div{
+        margin: 0 auto 10px auto;
+        width: 70%;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgba(255,255,255,0.9);
+        border-radius: 24px;
+        color: black;
+        font-size: medium;
+        padding: 15px;
+      }
+      
+      .cardGrid div img{
+        width: auto;
+        height: auto;
+        max-height: 30%;
+        max-width: 70%;
+      }
+      
+      .CardTemplate{
+        height: auto;
+        min-height: min-content; 
+      }
+      
+      /* Começo das configurações do Form */
+      
+      /* .loadingPlace{
+        
+      }
+      
+      form{
+        
+      }
+      
+      input{
+        
+      }
+      
+      button{
+        
+      }
+      
+      button:active{
+        
+      } */
+      /* Final das configurações do Form */
+      
+      /* Final dos CardGrids */
+/*       
+      footer{
+        
+      } */
+}
+  
+  
