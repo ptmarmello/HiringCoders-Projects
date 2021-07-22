@@ -1,0 +1,43 @@
+[
+    {
+        "id": 0,
+        "product":"nome do produto",
+        "price": 23.99,
+        "image": "url da imagem",
+        "page": "/nome do produto",
+        "description": "descrição do produto"
+    },
+    {
+        "id": 2,
+        "product":"nome do produto",
+        "price": 23.99,
+        "image": "url da imagem",
+        "page": "/nome do produto",
+        "description": "descrição do produto"
+    },
+    {
+        "id": 3,
+        "product":"nome do produto",
+        "price": 23.99,
+        "image": "url da imagem",
+        "page": "/nome do produto",
+        "description": "descrição do produto"
+    },
+    {
+        "id": 4,
+        "product":"nome do produto",
+        "price": 23.99,
+        "image": "url da imagem",
+        "page": "/nome do produto",
+        "description": "descrição do produto"
+    },
+    {
+        "id": 5,
+        "product":"nome do produto",
+        "price": 23.99,
+        "image": "url da imagem",
+        "page": "/nome do produto",
+        "description": "descrição do produto"
+    }
+
+]

@@ -1,0 +1,27 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1,
+    "total": 3
+  },
+  "1 info pnpm": {
+    "err": {
+      "name": "Error",
+      "message": "Unexpected virtual store location",
+      "code": "ERR_PNPM_UNEXPECTED_VIRTUAL_STORE",
+      "stack": "Error: Unexpected virtual store location\n    at Object.checkCompatibility [as default] (C:\\Users\\Pedro T\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:90147:15)\n    at C:\\Users\\Pedro T\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:90657:39\n    at Array.map (<anonymous>)\n    at validateModules (C:\\Users\\Pedro T\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:90655:34)\n    at Object.getContext [as default] (C:\\Users\\Pedro T\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:90553:34)\n    at async mutateModules (C:\\Users\\Pedro T\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:113065:19)\n    at async Object.addDependenciesToPackage (C:\\Users\\Pedro T\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:113393:24)\n    at async C:\\Users\\Pedro T\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:115685:31"
+    }
+  },
+  "2 error pnpm": {
+    "code": "ERR_PNPM_UNEXPECTED_VIRTUAL_STORE",
+    "expected": "C:\\Users\\Pedro T\\Documents\\GitRepos\\HiringCoders Projects\\Graphql-Projeto\\client-server-example\\packages\\node_modules\\.pnpm",
+    "actual": "C:\\Users\\Pedro T\\Documents\\GitRepos\\HiringCoders Projects\\Graphql-Projeto\\client-server-example\\packages\\server\\node_modules\\.pnpm",
+    "modulesDir": "C:\\Users\\Pedro T\\Documents\\GitRepos\\HiringCoders Projects\\Graphql-Projeto\\client-server-example\\packages\\server\\node_modules",
+    "prefix": "C:\\Users\\Pedro T\\Documents\\GitRepos\\HiringCoders Projects\\Graphql-Projeto\\client-server-example\\packages\\server",
+    "err": {
+      "name": "Error",
+      "message": "Unexpected virtual store location",
+      "code": "ERR_PNPM_UNEXPECTED_VIRTUAL_STORE",
+      "stack": "Error: Unexpected virtual store location\n    at Object.checkCompatibility [as default] (C:\\Users\\Pedro T\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:90147:15)\n    at C:\\Users\\Pedro T\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:90657:39\n    at Array.map (<anonymous>)\n    at validateModules (C:\\Users\\Pedro T\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:90655:34)\n    at Object.getContext [as default] (C:\\Users\\Pedro T\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:90553:34)\n    at async mutateModules (C:\\Users\\Pedro T\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:113065:19)\n    at async Object.addDependenciesToPackage (C:\\Users\\Pedro T\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:113393:24)\n    at async C:\\Users\\Pedro T\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:115685:31"
+    }
+  }
+}

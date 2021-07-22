@@ -1,0 +1,48 @@
+@media only screen and (min-width: 900px){
+    .catGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 6vw;
+    }
+
+    .catGrid div{
+        width: 100%;
+        height: 360px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .catGrid div{
+        width: 100%;
+        min-height: 70px;
+        margin-top: 20px;
+    }
+
+    .catGrid div:first-child{
+        margin-top: 0;
+    }
+}
+
+.catGrid{
+    margin: calc(3vh + 22px) auto calc(3vh + 22px) auto;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.catGrid div{
+    width: 100%;
+    min-height: 70px ;
+    border: 0;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: .4s ease transform;
+}
+
+.catGrid div:hover{
+    /* transform: scale(1.02); */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
