@@ -1,0 +1,34 @@
+.advantageDiv{
+    width: 80%;
+    height: auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 5vh auto;
+    display: flex;
+}
+
+.advantageDiv ul {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media only screen and (max-width: 900px){
+    .advantageDiv{
+        margin: 0 auto;
+    }
+    .advantageDiv ul {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .advantageDiv ul li{
+        margin: 4vh auto;
+    }
+}
+.advantageDiv li{
+    list-style: none;
+}

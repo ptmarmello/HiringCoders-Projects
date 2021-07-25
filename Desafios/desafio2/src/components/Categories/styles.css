@@ -46,3 +46,15 @@
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+img {
+    width: 85%;
+    max-width: 300px;
+    height: auto;
+    margin: 2vh auto 0 auto;
+    border-radius: 16px;
+}
+
+h4{
+    margin: 0 auto;
+    margin-top: calc(2vh);
+}

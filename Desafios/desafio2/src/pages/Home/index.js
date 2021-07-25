@@ -1,12 +1,17 @@
+import React from 'react';
+import { ProductCard } from '../../components/Cards';
 import Categories from '../../components/Categories';
 import CtaCard from '../../components/CtaCard';
 import Footer from '../../components/Footer';
 import GreatSection from '../../components/GreatSection';
 import Navbar from '../../components/Navbar';
 import Products from '../../components/Products';
-// import './styles.css';
+import './styles.css';
+
 
 export default function Home(){
+    const [produtos, setProdutos] = React.useState([]);
+    
     return(
         <>
             {/* Navbar
@@ -16,7 +21,7 @@ export default function Home(){
                 -> bag
             */}
             <GreatSection bgType="greatsectionBg">
-                <Navbar />
+                <Navbar product={produtos} />
                 <div>
                     <h1>Precisando de uma roupitcha nova?</h1>
                     <h2>Você veio ao lugar certo!</h2>
@@ -31,7 +36,7 @@ export default function Home(){
                 -> acessórios
             */}
             
-            <Products/>
+            <Products produtos={produtos} changes={setProdutos} />
             {/* Display de Produtos 
                 products from data.map()
                 cards
@@ -40,14 +45,30 @@ export default function Home(){
                 -> preço
                 -> icone para add ao carrinho
             */}
-            <GreatSection>
+            <>
                 {/* SecondSection
                     -> Vantagem 1
                     -> Vantagem 2
                     -> Vantagem 3
                 */}
-                second section
-            </GreatSection>
+                <h2>Vantagens</h2>
+                <div className="advantageDiv">
+                    <ul>
+                        <ProductCard id={1} key={1}>
+                            <img alt="icone_1" />
+                            <p>Descrição da vantagem</p>
+                        </ProductCard>
+                        <ProductCard id={2} key={2}>
+                            <img alt="icone_2" />
+                            <p>Descrição da vantagem</p>
+                        </ProductCard>
+                        <ProductCard id={3} key={3}>
+                            <img alt="icone_3" />
+                            <p>Descrição da vantagem</p>
+                        </ProductCard>
+                    </ul>
+                </div>
+            </>
             
             <CtaCard />
             {/* Cadastre-se

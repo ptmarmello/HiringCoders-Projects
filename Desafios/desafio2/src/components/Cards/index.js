@@ -10,7 +10,8 @@ function CardTemplate(props){
 export function CategoryCard(props){
     return(
         <CardTemplate>
-            {props.title}
+            <img src={props.image} alt={props.title}/>
+            <h4>{props.title}</h4>
         </CardTemplate>
     )
 }
@@ -18,7 +19,7 @@ export function CategoryCard(props){
 export function ProductCard(props){
     // refatorar aqui fora para abrir o produto e fazer tudo aqui logo
     return(
-        <CardTemplate>
+        <CardTemplate as="button">
             <li key={props.id}>
                 {props.children}
             </li>
