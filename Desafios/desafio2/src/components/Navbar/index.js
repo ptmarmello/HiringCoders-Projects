@@ -1,13 +1,37 @@
-export default function Navbar(props){
+import React from 'react';
+import './styles.css';
 
-    const myProds = props.product;
+export default function Navbar(props){
+    
     return(
         <nav>
-            Essa é a navbar
-
-            <side>
-                Meus produtos:{myProds.length}
-            </side>
+            <div className="navItem navLogo">
+                Logo
+            </div>
+            <div className="navItem navList">
+                <ul>
+                    <li>
+                        Nossas Coleções
+                    </li>
+                    <li>
+                        Acessórios
+                    </li>
+                    <li>
+                        Contato
+                    </li>
+                </ul>
+            </div>
+            <div className="navCorner">
+                <a href="/">
+                    Login
+                </a>
+                <button onClick={() => {
+                    localStorage.removeItem(`cart-products`);
+                    props.changes([]);
+                }}>
+                    { props.value.length } Produtos
+                </button>
+            </div>
         </nav>
     )
 }

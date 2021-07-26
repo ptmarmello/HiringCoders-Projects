@@ -11,7 +11,11 @@ import './styles.css';
 
 export default function Home(){
     const [produtos, setProdutos] = React.useState([]);
-    
+    // const storage = localStorage.getItem(`cart-products`);
+
+    // console.log("Valores",value)
+
+
     return(
         <>
             {/* Navbar
@@ -21,11 +25,15 @@ export default function Home(){
                 -> bag
             */}
             <GreatSection bgType="greatsectionBg">
-                <Navbar product={produtos} />
-                <div>
+                <Navbar value={produtos} changes={setProdutos} />
+                <div className="greatDiv">
                     <h1>Precisando de uma roupitcha nova?</h1>
                     <h2>Você veio ao lugar certo!</h2>
-                    <button>Ver Promoções!</button>
+                    <button onClick={() => {
+                        const dest = document.getElementById("prds").offsetTop;
+                        // console.log("destino",dest)
+                        window.scrollTo(0, dest - 15);
+                    }} >Ver Promoções!</button>
                 </div>
             </GreatSection>
             
@@ -36,7 +44,7 @@ export default function Home(){
                 -> acessórios
             */}
             
-            <Products produtos={produtos} changes={setProdutos} />
+            <Products produtos={produtos} changes={setProdutos} id={"prds"}/>
             {/* Display de Produtos 
                 products from data.map()
                 cards
@@ -51,19 +59,19 @@ export default function Home(){
                     -> Vantagem 2
                     -> Vantagem 3
                 */}
-                <h2>Vantagens</h2>
+                <h2 style={{marginTop:'4vh'}}>Vantagens</h2>
                 <div className="advantageDiv">
                     <ul>
                         <ProductCard id={1} key={1}>
-                            <img alt="icone_1" />
+                            <img alt="icone_1" src="https://via.placeholder.com/300" />
                             <p>Descrição da vantagem</p>
                         </ProductCard>
                         <ProductCard id={2} key={2}>
-                            <img alt="icone_2" />
+                            <img alt="icone_2" src="https://via.placeholder.com/300" />
                             <p>Descrição da vantagem</p>
                         </ProductCard>
                         <ProductCard id={3} key={3}>
-                            <img alt="icone_3" />
+                            <img alt="icone_3" src="https://via.placeholder.com/300" />
                             <p>Descrição da vantagem</p>
                         </ProductCard>
                     </ul>

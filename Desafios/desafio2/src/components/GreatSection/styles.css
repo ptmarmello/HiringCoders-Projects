@@ -13,8 +13,8 @@
     background-size: cover;
 }
 
-.greatsectionBg div {
-    margin-top: calc( 20vh );
+.greatsectionBg .greatDiv {
+    margin-top: calc( 30vh );
 }
 
 .greatsectionBg h1,h2{

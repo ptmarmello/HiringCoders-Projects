@@ -8,9 +8,9 @@ export default function Products(props){
     // const [produtos, setProdutos] = React.useState([]);
     return(
         // aqui talvez tenha que ser uma grid
-        <>
-            <h2>Alguns Produtos</h2>
-            <section className="products" >
+        < >
+            <h2 id={props.id}>Nossos Produtos</h2>
+            <section className="products">
                 <ul>
                     {data.map( product => {
                         return(
@@ -18,7 +18,7 @@ export default function Products(props){
                                 <img alt={product.product} src={product.image} />
 
                                     <h2>{product.product}</h2>
-                                <div>
+                                <div className="priceTag">
                                     <p>{product.price}</p>
                                     <button onClick={() => {
                                         const data = {
@@ -28,12 +28,12 @@ export default function Products(props){
                                 
                                         if(props.produtos == null || props.produtos === undefined){
                                             props.changes(data);
-                                            localStorage.setItem(`cart-products-${props.produtos.length}`,JSON.stringify(...props.produtos));
+                                            localStorage.setItem(`cart-products`,JSON.stringify(...props.produtos));
                                         }
                                         else{
                                             props.changes([...props.produtos, data])
-                                            localStorage.setItem(`cart-products-${props.produtos.length}`,JSON.stringify(props.produtos));
-                                            localStorage.removeItem(`cart-products-${props.produtos.length-1}`);
+                                            localStorage.removeItem(`cart-products`);
+                                            localStorage.setItem(`cart-products`,JSON.stringify(props.produtos));
                                         }
                                         
                                     }}>

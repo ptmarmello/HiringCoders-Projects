@@ -1,10 +1,11 @@
+
 .advantageDiv{
     width: 80%;
     height: auto;
     justify-content: center;
     align-content: center;
     align-items: center;
-    margin: 5vh auto;
+    margin: 0 auto 5vh auto;
     display: flex;
 }
 
