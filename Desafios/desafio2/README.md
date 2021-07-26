@@ -27,7 +27,7 @@ Ao clicar nos botões de `add` você poderá adicionar tais produtos no seu carr
 Em `Produtos` é possível visualizar a quantidade de produtos no seu carrinho. Ao clicar, o botão apaga seus produtos no `Localstorage` e no contador.
 
 ### Adicionando Email
-Ao adicionar um e-mail e clicar em enviar, o endereço é armazenado no localStorage 
+Ao adicionar um e-mail e clicar em enviar, o endereço é armazenado no localStorage.
 
 ## Scripts Mais Importantes
 Existem outros scripts disponíveis para testes e verificações. Tais, são padronizados e podem ser obtidos na documentação oficial do React (especificamente na parte de Create-React-App)
